@@ -5,7 +5,7 @@
 //  Created by Abdullah  on 01/11/2017.
 //  Copyright © 2017 Abdullah Sevim. All rights reserved.
 //
-
+import Alamofire
 import UIKit
 
 class ViewController: UIViewController {
@@ -19,7 +19,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 

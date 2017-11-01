@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42D79670B474683C0079A94C /* Pods_APShoppingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9403493AF91EB94689AFFCF /* Pods_APShoppingTests.framework */; };
+		A2F64A0860A8A5F93D178F5D /* Pods_APShoppingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A487FFF3B0012FC5C51FDBE /* Pods_APShoppingUITests.framework */; };
+		B8C4713F1FAA5F5400CAA397 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C4713E1FAA5F5400CAA397 /* Alamofire.framework */; };
 		B8FD9CA41FA9B9D700D965F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD9CA31FA9B9D700D965F2 /* AppDelegate.swift */; };
 		B8FD9CA61FA9B9D700D965F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD9CA51FA9B9D700D965F2 /* ViewController.swift */; };
 		B8FD9CA91FA9B9D700D965F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CA71FA9B9D700D965F2 /* Main.storyboard */; };
@@ -14,6 +17,7 @@
 		B8FD9CAE1FA9B9D700D965F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CAC1FA9B9D700D965F2 /* LaunchScreen.storyboard */; };
 		B8FD9CB91FA9B9D700D965F2 /* APShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD9CB81FA9B9D700D965F2 /* APShoppingTests.swift */; };
 		B8FD9CC41FA9B9D700D965F2 /* APShoppingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD9CC31FA9B9D700D965F2 /* APShoppingUITests.swift */; };
+		FCABB0B2A6E4739E0108D724 /* Pods_APShopping.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B92D6DE7C343AC24463A1AC0 /* Pods_APShopping.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00412AF8FBD1BB3753FB983B /* Pods-APShoppingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APShoppingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APShoppingUITests/Pods-APShoppingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		01FEB07867F7C9D82F17A2B0 /* Pods-APShopping.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APShopping.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APShopping/Pods-APShopping.debug.xcconfig"; sourceTree = "<group>"; };
+		40DEDA6A2A893E30A5F52C37 /* Pods-APShopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APShopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-APShopping/Pods-APShopping.release.xcconfig"; sourceTree = "<group>"; };
+		54ED10202B34E8BBF3E97F94 /* Pods-APShoppingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APShoppingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APShoppingUITests/Pods-APShoppingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8A487FFF3B0012FC5C51FDBE /* Pods_APShoppingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APShoppingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8C4713C1FAA5E7B00CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		B8C4713E1FAA5F5400CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		B8FD9CA01FA9B9D700D965F2 /* APShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FD9CA31FA9B9D700D965F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8FD9CA51FA9B9D700D965F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +58,10 @@
 		B8FD9CBF1FA9B9D700D965F2 /* APShoppingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APShoppingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FD9CC31FA9B9D700D965F2 /* APShoppingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APShoppingUITests.swift; sourceTree = "<group>"; };
 		B8FD9CC51FA9B9D700D965F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B92D6DE7C343AC24463A1AC0 /* Pods_APShopping.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APShopping.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C469A45204B1F1D69D3629BC /* Pods-APShoppingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APShoppingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-APShoppingTests/Pods-APShoppingTests.release.xcconfig"; sourceTree = "<group>"; };
+		C9403493AF91EB94689AFFCF /* Pods_APShoppingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APShoppingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC61467E60F84D0730A173F3 /* Pods-APShoppingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APShoppingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APShoppingTests/Pods-APShoppingTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8C4713F1FAA5F5400CAA397 /* Alamofire.framework in Frameworks */,
+				FCABB0B2A6E4739E0108D724 /* Pods_APShopping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42D79670B474683C0079A94C /* Pods_APShoppingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +86,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F64A0860A8A5F93D178F5D /* Pods_APShoppingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F17D1612B65F960491857E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B8C4713E1FAA5F5400CAA397 /* Alamofire.framework */,
+				B8C4713C1FAA5E7B00CAA397 /* Alamofire.framework */,
+				B92D6DE7C343AC24463A1AC0 /* Pods_APShopping.framework */,
+				C9403493AF91EB94689AFFCF /* Pods_APShoppingTests.framework */,
+				8A487FFF3B0012FC5C51FDBE /* Pods_APShoppingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FA208A0E9A3D5AA7FD7A291 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				01FEB07867F7C9D82F17A2B0 /* Pods-APShopping.debug.xcconfig */,
+				40DEDA6A2A893E30A5F52C37 /* Pods-APShopping.release.xcconfig */,
+				CC61467E60F84D0730A173F3 /* Pods-APShoppingTests.debug.xcconfig */,
+				C469A45204B1F1D69D3629BC /* Pods-APShoppingTests.release.xcconfig */,
+				54ED10202B34E8BBF3E97F94 /* Pods-APShoppingUITests.debug.xcconfig */,
+				00412AF8FBD1BB3753FB983B /* Pods-APShoppingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		B8FD9C971FA9B9D700D965F2 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +125,8 @@
 				B8FD9CB71FA9B9D700D965F2 /* APShoppingTests */,
 				B8FD9CC21FA9B9D700D965F2 /* APShoppingUITests */,
 				B8FD9CA11FA9B9D700D965F2 /* Products */,
+				2FA208A0E9A3D5AA7FD7A291 /* Pods */,
+				2F17D1612B65F960491857E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8FD9CC81FA9B9D700D965F2 /* Build configuration list for PBXNativeTarget "APShopping" */;
 			buildPhases = (
+				B1E58E4C0C3E9E3F7213D4A5 /* [CP] Check Pods Manifest.lock */,
 				B8FD9C9C1FA9B9D700D965F2 /* Sources */,
 				B8FD9C9D1FA9B9D700D965F2 /* Frameworks */,
 				B8FD9C9E1FA9B9D700D965F2 /* Resources */,
+				CFCAC2F166072BA0FAC253CD /* [CP] Embed Pods Frameworks */,
+				50BAFE9E908CF8F1AB43ED2F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +198,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8FD9CCB1FA9B9D700D965F2 /* Build configuration list for PBXNativeTarget "APShoppingTests" */;
 			buildPhases = (
+				5B2132F55E788738F40148D1 /* [CP] Check Pods Manifest.lock */,
 				B8FD9CB01FA9B9D700D965F2 /* Sources */,
 				B8FD9CB11FA9B9D700D965F2 /* Frameworks */,
 				B8FD9CB21FA9B9D700D965F2 /* Resources */,
+				A82CFC34FFBF7198BAD96B75 /* [CP] Embed Pods Frameworks */,
+				AAD46FC0EEFBD6850BA78DC0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8FD9CCE1FA9B9D700D965F2 /* Build configuration list for PBXNativeTarget "APShoppingUITests" */;
 			buildPhases = (
+				7866E3B64F92F9DE928285A7 /* [CP] Check Pods Manifest.lock */,
 				B8FD9CBB1FA9B9D700D965F2 /* Sources */,
 				B8FD9CBC1FA9B9D700D965F2 /* Frameworks */,
 				B8FD9CBD1FA9B9D700D965F2 /* Resources */,
+				56686D640538496E31EC0688 /* [CP] Embed Pods Frameworks */,
+				076E5011BE09FFE060C665AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +311,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		076E5011BE09FFE060C665AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APShoppingUITests/Pods-APShoppingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50BAFE9E908CF8F1AB43ED2F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APShopping/Pods-APShopping-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56686D640538496E31EC0688 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APShoppingUITests/Pods-APShoppingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B2132F55E788738F40148D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7866E3B64F92F9DE928285A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A82CFC34FFBF7198BAD96B75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APShoppingTests/Pods-APShoppingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AAD46FC0EEFBD6850BA78DC0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APShoppingTests/Pods-APShoppingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1E58E4C0C3E9E3F7213D4A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CFCAC2F166072BA0FAC253CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APShopping/Pods-APShopping-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B8FD9C9C1FA9B9D700D965F2 /* Sources */ = {
@@ -415,9 +608,14 @@
 		};
 		B8FD9CC91FA9B9D700D965F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01FEB07867F7C9D82F17A2B0 /* Pods-APShopping.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 68KNUZCUCR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+				);
 				INFOPLIST_FILE = APShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unnamed.APShopping;
@@ -428,9 +626,14 @@
 		};
 		B8FD9CCA1FA9B9D700D965F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40DEDA6A2A893E30A5F52C37 /* Pods-APShopping.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 68KNUZCUCR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+				);
 				INFOPLIST_FILE = APShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.unnamed.APShopping;
@@ -441,6 +644,7 @@
 		};
 		B8FD9CCC1FA9B9D700D965F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC61467E60F84D0730A173F3 /* Pods-APShoppingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +660,7 @@
 		};
 		B8FD9CCD1FA9B9D700D965F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C469A45204B1F1D69D3629BC /* Pods-APShoppingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +676,7 @@
 		};
 		B8FD9CCF1FA9B9D700D965F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54ED10202B34E8BBF3E97F94 /* Pods-APShoppingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 68KNUZCUCR;
@@ -485,6 +691,7 @@
 		};
 		B8FD9CD01FA9B9D700D965F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00412AF8FBD1BB3753FB983B /* Pods-APShoppingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 68KNUZCUCR;
@@ -516,6 +723,7 @@
 				B8FD9CCA1FA9B9D700D965F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8FD9CCB1FA9B9D700D965F2 /* Build configuration list for PBXNativeTarget "APShoppingTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +732,7 @@
 				B8FD9CCD1FA9B9D700D965F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B8FD9CCE1FA9B9D700D965F2 /* Build configuration list for PBXNativeTarget "APShoppingUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +741,7 @@
 				B8FD9CD01FA9B9D700D965F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
