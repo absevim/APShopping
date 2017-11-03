@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		42D79670B474683C0079A94C /* Pods_APShoppingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9403493AF91EB94689AFFCF /* Pods_APShoppingTests.framework */; };
 		A2F64A0860A8A5F93D178F5D /* Pods_APShoppingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A487FFF3B0012FC5C51FDBE /* Pods_APShoppingUITests.framework */; };
-		B8C4713F1FAA5F5400CAA397 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C4713E1FAA5F5400CAA397 /* Alamofire.framework */; };
+		B802A5501FAD16F2004CBD5A /* Arrow.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B802A54F1FAD16F2004CBD5A /* Arrow.framework */; };
+		B802A5561FAD1AB5004CBD5A /* ws.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B802A5551FAD1AB5004CBD5A /* ws.framework */; };
+		B802A5581FAD1AE2004CBD5A /* then.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B802A5571FAD1AE2004CBD5A /* then.framework */; };
+		B802A55A1FAD27C5004CBD5A /* APSProductSize+Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B802A5591FAD27C5004CBD5A /* APSProductSize+Arrow.swift */; };
+		B802A55C1FAD2A49004CBD5A /* APSProductSizeDetail+Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B802A55B1FAD2A49004CBD5A /* APSProductSizeDetail+Arrow.swift */; };
+		B802A55E1FAD2C8B004CBD5A /* APSProductDetail+Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B802A55D1FAD2C8B004CBD5A /* APSProductDetail+Arrow.swift */; };
+		B802A5601FAD2CB7004CBD5A /* APSProduct+Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B802A55F1FAD2CB7004CBD5A /* APSProduct+Arrow.swift */; };
 		B8FD9CA41FA9B9D700D965F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD9CA31FA9B9D700D965F2 /* AppDelegate.swift */; };
 		B8FD9CA61FA9B9D700D965F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD9CA51FA9B9D700D965F2 /* ViewController.swift */; };
 		B8FD9CA91FA9B9D700D965F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CA71FA9B9D700D965F2 /* Main.storyboard */; };
@@ -43,8 +49,25 @@
 		40DEDA6A2A893E30A5F52C37 /* Pods-APShopping.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APShopping.release.xcconfig"; path = "Pods/Target Support Files/Pods-APShopping/Pods-APShopping.release.xcconfig"; sourceTree = "<group>"; };
 		54ED10202B34E8BBF3E97F94 /* Pods-APShoppingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APShoppingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APShoppingUITests/Pods-APShoppingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A487FFF3B0012FC5C51FDBE /* Pods_APShoppingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_APShoppingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B802A52A1FACDF7C004CBD5A /* JASON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JASON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/JASON/JASON.framework"; sourceTree = "<group>"; };
+		B802A5321FACEF79004CBD5A /* Mapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapper.framework; path = "Pods/../build/Debug-iphoneos/ModelMapper/Mapper.framework"; sourceTree = "<group>"; };
+		B802A5341FACF4E1004CBD5A /* Unbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Unbox.framework; path = "Pods/../build/Debug-iphoneos/Unbox/Unbox.framework"; sourceTree = "<group>"; };
+		B802A5361FACFE1E004CBD5A /* UnboxedAlamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UnboxedAlamofire.framework; path = "Pods/../build/Debug-iphoneos/UnboxedAlamofire/UnboxedAlamofire.framework"; sourceTree = "<group>"; };
+		B802A5491FAD14C1004CBD5A /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/Argo/Argo.framework"; sourceTree = "<group>"; };
+		B802A54A1FAD14C1004CBD5A /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/Runes/Runes.framework"; sourceTree = "<group>"; };
+		B802A54D1FAD1549004CBD5A /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/Curry/Curry.framework"; sourceTree = "<group>"; };
+		B802A54F1FAD16F2004CBD5A /* Arrow.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Arrow.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/Arrow/Arrow.framework"; sourceTree = "<group>"; };
+		B802A5551FAD1AB5004CBD5A /* ws.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ws.framework; path = "Pods/../build/Debug-iphoneos/ws/ws.framework"; sourceTree = "<group>"; };
+		B802A5571FAD1AE2004CBD5A /* then.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = then.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/thenPromise/then.framework"; sourceTree = "<group>"; };
+		B802A5591FAD27C5004CBD5A /* APSProductSize+Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APSProductSize+Arrow.swift"; sourceTree = "<group>"; };
+		B802A55B1FAD2A49004CBD5A /* APSProductSizeDetail+Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APSProductSizeDetail+Arrow.swift"; sourceTree = "<group>"; };
+		B802A55D1FAD2C8B004CBD5A /* APSProductDetail+Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APSProductDetail+Arrow.swift"; sourceTree = "<group>"; };
+		B802A55F1FAD2CB7004CBD5A /* APSProduct+Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APSProduct+Arrow.swift"; sourceTree = "<group>"; };
 		B8C4713C1FAA5E7B00CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		B8C4713E1FAA5F5400CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		B8D9EA091FAB912C00B7D958 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		B8D9EA0B1FAC632200B7D958 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = "Pods/../build/Debug-iphoneos/AlamofireObjectMapper/AlamofireObjectMapper.framework"; sourceTree = "<group>"; };
+		B8D9EA0C1FAC632200B7D958 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
 		B8FD9CA01FA9B9D700D965F2 /* APShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FD9CA31FA9B9D700D965F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B8FD9CA51FA9B9D700D965F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,7 +92,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8C4713F1FAA5F5400CAA397 /* Alamofire.framework in Frameworks */,
+				B802A5581FAD1AE2004CBD5A /* then.framework in Frameworks */,
+				B802A5561FAD1AB5004CBD5A /* ws.framework in Frameworks */,
+				B802A5501FAD16F2004CBD5A /* Arrow.framework in Frameworks */,
 				FCABB0B2A6E4739E0108D724 /* Pods_APShopping.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -96,6 +121,19 @@
 		2F17D1612B65F960491857E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B802A5571FAD1AE2004CBD5A /* then.framework */,
+				B802A5551FAD1AB5004CBD5A /* ws.framework */,
+				B802A54F1FAD16F2004CBD5A /* Arrow.framework */,
+				B802A54D1FAD1549004CBD5A /* Curry.framework */,
+				B802A5491FAD14C1004CBD5A /* Argo.framework */,
+				B802A54A1FAD14C1004CBD5A /* Runes.framework */,
+				B802A5361FACFE1E004CBD5A /* UnboxedAlamofire.framework */,
+				B802A5341FACF4E1004CBD5A /* Unbox.framework */,
+				B802A5321FACEF79004CBD5A /* Mapper.framework */,
+				B802A52A1FACDF7C004CBD5A /* JASON.framework */,
+				B8D9EA0B1FAC632200B7D958 /* AlamofireObjectMapper.framework */,
+				B8D9EA0C1FAC632200B7D958 /* ObjectMapper.framework */,
+				B8D9EA091FAB912C00B7D958 /* SwiftyJSON.framework */,
 				B8C4713E1FAA5F5400CAA397 /* Alamofire.framework */,
 				B8C4713C1FAA5E7B00CAA397 /* Alamofire.framework */,
 				B92D6DE7C343AC24463A1AC0 /* Pods_APShopping.framework */,
@@ -116,6 +154,13 @@
 				00412AF8FBD1BB3753FB983B /* Pods-APShoppingUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		B802A52C1FACE94E004CBD5A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		B8FD9C971FA9B9D700D965F2 = {
@@ -143,12 +188,17 @@
 		B8FD9CA21FA9B9D700D965F2 /* APShopping */ = {
 			isa = PBXGroup;
 			children = (
+				B802A52C1FACE94E004CBD5A /* Model */,
 				B8FD9CA31FA9B9D700D965F2 /* AppDelegate.swift */,
 				B8FD9CA51FA9B9D700D965F2 /* ViewController.swift */,
 				B8FD9CA71FA9B9D700D965F2 /* Main.storyboard */,
 				B8FD9CAA1FA9B9D700D965F2 /* Assets.xcassets */,
 				B8FD9CAC1FA9B9D700D965F2 /* LaunchScreen.storyboard */,
 				B8FD9CAF1FA9B9D700D965F2 /* Info.plist */,
+				B802A55F1FAD2CB7004CBD5A /* APSProduct+Arrow.swift */,
+				B802A55D1FAD2C8B004CBD5A /* APSProductDetail+Arrow.swift */,
+				B802A5591FAD27C5004CBD5A /* APSProductSize+Arrow.swift */,
+				B802A55B1FAD2A49004CBD5A /* APSProductSizeDetail+Arrow.swift */,
 			);
 			path = APShopping;
 			sourceTree = "<group>";
@@ -455,7 +505,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B802A55A1FAD27C5004CBD5A /* APSProductSize+Arrow.swift in Sources */,
+				B802A55E1FAD2C8B004CBD5A /* APSProductDetail+Arrow.swift in Sources */,
 				B8FD9CA61FA9B9D700D965F2 /* ViewController.swift in Sources */,
+				B802A55C1FAD2A49004CBD5A /* APSProductSizeDetail+Arrow.swift in Sources */,
+				B802A5601FAD2CB7004CBD5A /* APSProduct+Arrow.swift in Sources */,
 				B8FD9CA41FA9B9D700D965F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,6 +669,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AlamofireObjectMapper",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ModelMapper",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Unbox",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UnboxedAlamofire",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ws",
 				);
 				INFOPLIST_FILE = APShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -633,6 +692,11 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/AlamofireObjectMapper",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ModelMapper",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Unbox",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/UnboxedAlamofire",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/ws",
 				);
 				INFOPLIST_FILE = APShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -6,10 +6,14 @@
 //  Copyright © 2017 Abdullah Sevim. All rights reserved.
 //
 import Alamofire
+import ws
+import then
+import Arrow
 import UIKit
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+private var myItemsHidden = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -19,6 +23,4 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
-
