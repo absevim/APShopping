@@ -16,8 +16,10 @@
 		B802A55C1FAD2A49004CBD5A /* APSProductSizeDetail+Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B802A55B1FAD2A49004CBD5A /* APSProductSizeDetail+Arrow.swift */; };
 		B802A55E1FAD2C8B004CBD5A /* APSProductDetail+Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B802A55D1FAD2C8B004CBD5A /* APSProductDetail+Arrow.swift */; };
 		B802A5601FAD2CB7004CBD5A /* APSProduct+Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B802A55F1FAD2CB7004CBD5A /* APSProduct+Arrow.swift */; };
+		B829123E1FAE0E8A0071E5DB /* APSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829123D1FAE0E8A0071E5DB /* APSBaseViewController.swift */; };
+		B82912411FAE0ED20071E5DB /* APSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82912401FAE0ED20071E5DB /* APSMainViewController.swift */; };
+		B82912431FAE0F6E0071E5DB /* APSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82912421FAE0F6E0071E5DB /* APSTableViewCell.swift */; };
 		B8FD9CA41FA9B9D700D965F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD9CA31FA9B9D700D965F2 /* AppDelegate.swift */; };
-		B8FD9CA61FA9B9D700D965F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD9CA51FA9B9D700D965F2 /* ViewController.swift */; };
 		B8FD9CA91FA9B9D700D965F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CA71FA9B9D700D965F2 /* Main.storyboard */; };
 		B8FD9CAB1FA9B9D700D965F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CAA1FA9B9D700D965F2 /* Assets.xcassets */; };
 		B8FD9CAE1FA9B9D700D965F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CAC1FA9B9D700D965F2 /* LaunchScreen.storyboard */; };
@@ -63,6 +65,9 @@
 		B802A55B1FAD2A49004CBD5A /* APSProductSizeDetail+Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APSProductSizeDetail+Arrow.swift"; sourceTree = "<group>"; };
 		B802A55D1FAD2C8B004CBD5A /* APSProductDetail+Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APSProductDetail+Arrow.swift"; sourceTree = "<group>"; };
 		B802A55F1FAD2CB7004CBD5A /* APSProduct+Arrow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "APSProduct+Arrow.swift"; sourceTree = "<group>"; };
+		B829123D1FAE0E8A0071E5DB /* APSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSBaseViewController.swift; sourceTree = "<group>"; };
+		B82912401FAE0ED20071E5DB /* APSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSMainViewController.swift; sourceTree = "<group>"; };
+		B82912421FAE0F6E0071E5DB /* APSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSTableViewCell.swift; sourceTree = "<group>"; };
 		B8C4713C1FAA5E7B00CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		B8C4713E1FAA5F5400CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		B8D9EA091FAB912C00B7D958 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
@@ -70,7 +75,6 @@
 		B8D9EA0C1FAC632200B7D958 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
 		B8FD9CA01FA9B9D700D965F2 /* APShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8FD9CA31FA9B9D700D965F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B8FD9CA51FA9B9D700D965F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B8FD9CA81FA9B9D700D965F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B8FD9CAA1FA9B9D700D965F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B8FD9CAD1FA9B9D700D965F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -156,11 +160,32 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		B802A52C1FACE94E004CBD5A /* Model */ = {
+		B802A5631FAD38E7004CBD5A /* Structs */ = {
 			isa = PBXGroup;
 			children = (
+				B802A55F1FAD2CB7004CBD5A /* APSProduct+Arrow.swift */,
+				B802A55D1FAD2C8B004CBD5A /* APSProductDetail+Arrow.swift */,
+				B802A5591FAD27C5004CBD5A /* APSProductSize+Arrow.swift */,
+				B802A55B1FAD2A49004CBD5A /* APSProductSizeDetail+Arrow.swift */,
 			);
-			name = Model;
+			name = Structs;
+			sourceTree = "<group>";
+		};
+		B829123A1FAE01CC0071E5DB /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				B82912421FAE0F6E0071E5DB /* APSTableViewCell.swift */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		B829123F1FAE0E910071E5DB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B829123D1FAE0E8A0071E5DB /* APSBaseViewController.swift */,
+				B82912401FAE0ED20071E5DB /* APSMainViewController.swift */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 		B8FD9C971FA9B9D700D965F2 = {
@@ -188,17 +213,14 @@
 		B8FD9CA21FA9B9D700D965F2 /* APShopping */ = {
 			isa = PBXGroup;
 			children = (
-				B802A52C1FACE94E004CBD5A /* Model */,
+				B829123F1FAE0E910071E5DB /* ViewControllers */,
+				B829123A1FAE01CC0071E5DB /* TableViewCell */,
+				B802A5631FAD38E7004CBD5A /* Structs */,
 				B8FD9CA31FA9B9D700D965F2 /* AppDelegate.swift */,
-				B8FD9CA51FA9B9D700D965F2 /* ViewController.swift */,
 				B8FD9CA71FA9B9D700D965F2 /* Main.storyboard */,
 				B8FD9CAA1FA9B9D700D965F2 /* Assets.xcassets */,
 				B8FD9CAC1FA9B9D700D965F2 /* LaunchScreen.storyboard */,
 				B8FD9CAF1FA9B9D700D965F2 /* Info.plist */,
-				B802A55F1FAD2CB7004CBD5A /* APSProduct+Arrow.swift */,
-				B802A55D1FAD2C8B004CBD5A /* APSProductDetail+Arrow.swift */,
-				B802A5591FAD27C5004CBD5A /* APSProductSize+Arrow.swift */,
-				B802A55B1FAD2A49004CBD5A /* APSProductSizeDetail+Arrow.swift */,
 			);
 			path = APShopping;
 			sourceTree = "<group>";
@@ -507,10 +529,12 @@
 			files = (
 				B802A55A1FAD27C5004CBD5A /* APSProductSize+Arrow.swift in Sources */,
 				B802A55E1FAD2C8B004CBD5A /* APSProductDetail+Arrow.swift in Sources */,
-				B8FD9CA61FA9B9D700D965F2 /* ViewController.swift in Sources */,
 				B802A55C1FAD2A49004CBD5A /* APSProductSizeDetail+Arrow.swift in Sources */,
+				B82912411FAE0ED20071E5DB /* APSMainViewController.swift in Sources */,
+				B829123E1FAE0E8A0071E5DB /* APSBaseViewController.swift in Sources */,
 				B802A5601FAD2CB7004CBD5A /* APSProduct+Arrow.swift in Sources */,
 				B8FD9CA41FA9B9D700D965F2 /* AppDelegate.swift in Sources */,
+				B82912431FAE0F6E0071E5DB /* APSTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

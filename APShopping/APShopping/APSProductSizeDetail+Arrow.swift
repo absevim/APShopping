@@ -15,7 +15,6 @@ struct APSProductSizeDetail {
     var label = ""
     var isInStock = false;
     var simpleProductSkus = ""
-    var apsProductSkuForSize = [APSProductSkuForSize]()
 }
 
 extension APSProductSizeDetail:ArrowParsable {
@@ -24,6 +23,5 @@ extension APSProductSizeDetail:ArrowParsable {
         label <-- json["label"]
         isInStock <-- json["isInStock"]
         simpleProductSkus <-- json["simpleProductSkus.Optional"]
-        apsProductSkuForSize <-- json["simpleProductSkus"]
     }
 }
