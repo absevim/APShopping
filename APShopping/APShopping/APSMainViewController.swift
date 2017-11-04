@@ -14,10 +14,15 @@ import UIKit
 class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITableViewDelegate  {
 
     @IBOutlet weak var tableView: UITableView!
-
+    private var productArray = [APSProductDetail]()
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        getProducts("boy")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 
@@ -31,7 +36,7 @@ class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITab
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5;
+        return self.productArray.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -40,21 +45,44 @@ class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITab
         let cellIdentifier = "apsTableViewCell"
         
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? APSTableViewCell  else {
-            fatalError("The dequeued cell is not an instance of MealTableViewCell.")
+            fatalError("The dequeued cell is not an instance of APSTableViewCell.")
         }
+
+        let apsProductDetail = self.productArray[indexPath.row];
+        cell.productTitleLabel.text = apsProductDetail.name
+        cell.productDetailLabel.text = apsProductDetail.description
+        cell.productPriceLabel.text = String(apsProductDetail.price)
         
         return cell
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    func tableView(_ tableView: UITableView, didSelectRowAt
+        indexPath: IndexPath){
+        self.performSegue(withIdentifier: "MainToDetailSegue", sender: self)
+    }
+    
+    func getProducts(_ searchString:String) -> Void {
+        let urlString = "https://www.mamasandpapas.ae/search/full/?searchString="+searchString+"&page=1&hitsPerPage=10"
+        
+        let ws = WS(urlString)
+        ws.post("").then { (json:JSON) in
+            var apsProduct = APSProduct()
+            apsProduct.deserialize(json)
+            
+            self.productArray = apsProduct.apsProductDetail;
+            self.tableView.reloadData()
+        }
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "MainToDetailSegue" ,
+            let vc = segue.destination as? APSDetailViewController ,
+            let indexPath = self.tableView.indexPathForSelectedRow {
+            let selectedProduct = self.productArray[indexPath.row]
+            vc.selectedProduct = selectedProduct
+        }
     }
-    */
 
 }

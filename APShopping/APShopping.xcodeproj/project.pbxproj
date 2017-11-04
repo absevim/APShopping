@@ -19,6 +19,7 @@
 		B829123E1FAE0E8A0071E5DB /* APSBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B829123D1FAE0E8A0071E5DB /* APSBaseViewController.swift */; };
 		B82912411FAE0ED20071E5DB /* APSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82912401FAE0ED20071E5DB /* APSMainViewController.swift */; };
 		B82912431FAE0F6E0071E5DB /* APSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82912421FAE0F6E0071E5DB /* APSTableViewCell.swift */; };
+		B82912451FAE2B570071E5DB /* APSDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82912441FAE2B570071E5DB /* APSDetailViewController.swift */; };
 		B8FD9CA41FA9B9D700D965F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD9CA31FA9B9D700D965F2 /* AppDelegate.swift */; };
 		B8FD9CA91FA9B9D700D965F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CA71FA9B9D700D965F2 /* Main.storyboard */; };
 		B8FD9CAB1FA9B9D700D965F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CAA1FA9B9D700D965F2 /* Assets.xcassets */; };
@@ -68,6 +69,7 @@
 		B829123D1FAE0E8A0071E5DB /* APSBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSBaseViewController.swift; sourceTree = "<group>"; };
 		B82912401FAE0ED20071E5DB /* APSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSMainViewController.swift; sourceTree = "<group>"; };
 		B82912421FAE0F6E0071E5DB /* APSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSTableViewCell.swift; sourceTree = "<group>"; };
+		B82912441FAE2B570071E5DB /* APSDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSDetailViewController.swift; sourceTree = "<group>"; };
 		B8C4713C1FAA5E7B00CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		B8C4713E1FAA5F5400CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		B8D9EA091FAB912C00B7D958 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			children = (
 				B829123D1FAE0E8A0071E5DB /* APSBaseViewController.swift */,
 				B82912401FAE0ED20071E5DB /* APSMainViewController.swift */,
+				B82912441FAE2B570071E5DB /* APSDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				B802A5601FAD2CB7004CBD5A /* APSProduct+Arrow.swift in Sources */,
 				B8FD9CA41FA9B9D700D965F2 /* AppDelegate.swift in Sources */,
 				B82912431FAE0F6E0071E5DB /* APSTableViewCell.swift in Sources */,
+				B82912451FAE2B570071E5DB /* APSDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

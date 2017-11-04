@@ -45,20 +45,20 @@
                                                             <rect key="frame" x="10" y="4" width="97.5" height="90"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTK-Rr-tOg">
-                                                            <rect key="frame" x="117.5" y="10" width="46.5" height="23"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                                            <rect key="frame" x="117.5" y="10" width="225" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2x-L6-xYf">
-                                                            <rect key="frame" x="117" y="38" width="42" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="117" y="33" width="255" height="14.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tai-bG-UHY">
-                                                            <rect key="frame" x="117.5" y="67.5" width="42" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <rect key="frame" x="117.5" y="71.5" width="35.5" height="17"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -66,9 +66,11 @@
                                                     <constraints>
                                                         <constraint firstItem="CtO-XT-zam" firstAttribute="leading" secondItem="xZR-FA-ldo" secondAttribute="leadingMargin" constant="2" id="F9v-ib-io6"/>
                                                         <constraint firstAttribute="bottomMargin" secondItem="tai-bG-UHY" secondAttribute="bottom" constant="3" id="LMx-oV-51E"/>
+                                                        <constraint firstItem="V2x-L6-xYf" firstAttribute="width" secondItem="xZR-FA-ldo" secondAttribute="width" multiplier="0.68" id="Ms7-er-Yme"/>
                                                         <constraint firstItem="CtO-XT-zam" firstAttribute="height" secondItem="xZR-FA-ldo" secondAttribute="height" multiplier="0.9" id="OCm-hZ-hob"/>
                                                         <constraint firstItem="CtO-XT-zam" firstAttribute="centerY" secondItem="xZR-FA-ldo" secondAttribute="centerY" id="TrG-aP-ahz"/>
                                                         <constraint firstItem="tai-bG-UHY" firstAttribute="leading" secondItem="CtO-XT-zam" secondAttribute="trailing" constant="10" id="WNi-7L-sT0"/>
+                                                        <constraint firstItem="PTK-Rr-tOg" firstAttribute="width" secondItem="xZR-FA-ldo" secondAttribute="width" multiplier="0.6" id="fnl-ox-0q5"/>
                                                         <constraint firstItem="PTK-Rr-tOg" firstAttribute="leading" secondItem="CtO-XT-zam" secondAttribute="trailing" constant="10" id="ggr-vd-WKS"/>
                                                         <constraint firstItem="V2x-L6-xYf" firstAttribute="leading" secondItem="CtO-XT-zam" secondAttribute="trailing" constant="10" id="jYT-pc-gFs"/>
                                                         <constraint firstItem="V2x-L6-xYf" firstAttribute="top" secondItem="PTK-Rr-tOg" secondAttribute="bottom" constant="5" id="kDW-nz-QW4"/>
@@ -113,6 +115,7 @@
                     <connections>
                         <outlet property="searchDisplayController" destination="yKs-po-8fW" id="Kn9-W6-0d3"/>
                         <outlet property="tableView" destination="QV3-1j-zqo" id="hTa-3g-sCv"/>
+                        <segue destination="1IX-cF-kdb" kind="show" identifier="MainToDetailSegue" action="showDetailViewController:sender:" id="UdS-cg-doS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -125,6 +128,24 @@
                     </connections>
                 </searchDisplayController>
             </objects>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="50p-RL-99A">
+            <objects>
+                <viewController id="1IX-cF-kdb" customClass="APSDetailViewController" customModule="APShopping" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mfD-Bc-Kex"/>
+                        <viewControllerLayoutGuide type="bottom" id="7ob-T6-Gue"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="l5s-HQ-ju6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7as-rq-g2q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="38"/>
         </scene>
     </scenes>
 </document>
