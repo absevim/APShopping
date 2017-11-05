@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HAActionSheetCell" customModule="HAPicker" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="60" id="HHA-jl-ICT" customClass="HAActionSheetCell" customModule="HAPicker" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HHA-jl-ICT" id="bkO-20-HLa">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="10U-jr-XR1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="text" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdh-VF-Zlo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.2470588235" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SWF-Cc-jEV">
+                                <rect key="frame" x="0.0" y="59" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.93725490199999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="MZ5-ge-hcz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SWF-Cc-jEV" secondAttribute="bottom" id="CMb-Mb-QLk"/>
+                            <constraint firstItem="SWF-Cc-jEV" firstAttribute="top" secondItem="rdh-VF-Zlo" secondAttribute="bottom" id="HuZ-Fq-M0a"/>
+                            <constraint firstItem="SWF-Cc-jEV" firstAttribute="leading" secondItem="10U-jr-XR1" secondAttribute="leading" id="cuq-VK-61D"/>
+                            <constraint firstItem="rdh-VF-Zlo" firstAttribute="leading" secondItem="10U-jr-XR1" secondAttribute="leading" id="eD8-5C-zc1"/>
+                            <constraint firstAttribute="trailing" secondItem="rdh-VF-Zlo" secondAttribute="trailing" id="i1J-Mg-ilh"/>
+                            <constraint firstItem="rdh-VF-Zlo" firstAttribute="top" secondItem="10U-jr-XR1" secondAttribute="top" id="nR5-sU-Fr9"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="60" id="oQ8-Mm-K4h"/>
+                            <constraint firstAttribute="trailing" secondItem="SWF-Cc-jEV" secondAttribute="trailing" id="t8L-0h-Vgm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="10U-jr-XR1" firstAttribute="top" secondItem="bkO-20-HLa" secondAttribute="top" id="5i4-rs-33N"/>
+                    <constraint firstItem="10U-jr-XR1" firstAttribute="leading" secondItem="bkO-20-HLa" secondAttribute="leading" id="6dN-8m-Grw"/>
+                    <constraint firstAttribute="bottom" secondItem="10U-jr-XR1" secondAttribute="bottom" id="9Jf-rD-Xgh"/>
+                    <constraint firstAttribute="trailing" secondItem="10U-jr-XR1" secondAttribute="trailing" id="YYz-uF-1Sm"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="seperatorView" destination="SWF-Cc-jEV" id="w76-fF-SBb"/>
+                <outlet property="titleLabel" destination="rdh-VF-Zlo" id="j9N-H6-D0K"/>
+            </connections>
+            <point key="canvasLocation" x="-83.5" y="-216"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -39,7 +39,7 @@ class APSDetailViewController: APSBaseViewController, UIScrollViewDelegate, UIAl
         self.selectedProductSizeButton.setTitle(self.selectedProduct?.sizeCode, for:.normal)
         self.isInStockBool = (self.selectedProduct?.isInStock)!
         self.checkStock(stock: (self.selectedProduct?.isInStock)!)
-        self.selectedProductPriceLabel.text = selectedProductSize + " AED"
+        self.selectedProductPriceLabel.text = "AED "+selectedProductSize
         self.productDescriptionLabel.text = "Description:\n" + (removeHTMLTagsFromString(textWithTags: (self.selectedProduct?.description)!))
         productCount = 1
         self.productSkuLabel.text = "Id:\(removeOptionalFromInt((self.selectedProduct?.visibleSku)!))"
@@ -70,7 +70,10 @@ class APSDetailViewController: APSBaseViewController, UIScrollViewDelegate, UIAl
     }
 
     @IBAction func selectProductSize(_ sender: Any) {
-        if  self.selectedProduct?.apsProductSize[0] != nil {
+        
+        if self.selectedProduct?.sizeCode == "One Size"{
+            self.selectedProductSizeButton.setTitle("One Size", for:.normal)
+        }else{
             let alert = UIAlertController(title: nil, message: "Sizes", preferredStyle: .actionSheet)
             
             let productSizeArray = self.selectedProduct?.apsProductSize[0]
@@ -87,8 +90,6 @@ class APSDetailViewController: APSBaseViewController, UIScrollViewDelegate, UIAl
                 alert.addAction(sizeAction)
             }
             self.present(alert, animated: true, completion: nil)
-        }else{
-            self.selectedProductSizeButton.setTitle("No size", for:.normal)
         }
     }
     

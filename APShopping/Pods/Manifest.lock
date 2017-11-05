@@ -1,0 +1,34 @@
+PODS:
+  - Alamofire (4.5.1)
+  - Arrow (3.0.5)
+  - HAActionSheet (0.1.9)
+  - Kingfisher (4.2.0)
+  - PureLayout (3.0.2)
+  - ReachabilitySwift (4.1.0)
+  - thenPromise (3.0.0)
+  - ws (3.0.0):
+    - Alamofire (~> 4.5.1)
+    - Arrow (~> 3.0.5)
+    - thenPromise (~> 3.0.0)
+
+DEPENDENCIES:
+  - Arrow
+  - HAActionSheet
+  - Kingfisher
+  - PureLayout
+  - ReachabilitySwift
+  - ws
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Arrow: b696d6173296da330d1a995019db42f693249cd6
+  HAActionSheet: e34b07351e302c1c91a77f709bbcd9ec918a378f
+  Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  thenPromise: 7aab1d73fd53dbe4c413602bd9f335208e89d60c
+  ws: 1690376f0653ecea866a08c0874bc59e32d206c2
+
+PODFILE CHECKSUM: 05ea3b6f15b1f82702794a7a464bbe1b15ac3ae8
+
+COCOAPODS: 1.2.0

@@ -10,7 +10,6 @@ import ws
 import then
 import Arrow
 import Kingfisher
-import Reachability
 import SystemConfiguration
 import UIKit
 
@@ -20,7 +19,6 @@ class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITab
     private var productArray = [APSProductDetail]()
     private var pageNumber = Int()
     var refreshControl: UIRefreshControl!
-    var reachability: Reachability?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

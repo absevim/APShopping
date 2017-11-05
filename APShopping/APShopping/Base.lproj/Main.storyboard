@@ -28,7 +28,7 @@
                                 <subviews>
                                     <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ImW-9T-fsb">
                                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                        <color key="barTintColor" red="0.95686274510000002" green="0.74773468610000005" blue="0.1103601954" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="barTintColor" red="0.95686274509803915" green="0.74901960784313726" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <items>
                                             <navigationItem title="APShopping" id="J1t-nX-cVB"/>
                                         </items>

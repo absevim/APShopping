@@ -48,6 +48,8 @@ class APSBaseViewController: UIViewController {
         textWithOutTags = textWithOutTags.replacingOccurrences(of: "<strong>", with: "")
         textWithOutTags = textWithOutTags.replacingOccurrences(of: "<ul>", with: "")
         textWithOutTags = textWithOutTags.replacingOccurrences(of: "</ul>", with: "")
+        textWithOutTags = textWithOutTags.replacingOccurrences(of: "<p>", with: "")
+        textWithOutTags = textWithOutTags.replacingOccurrences(of: "</p>", with: "")
         return textWithOutTags
     }
     
