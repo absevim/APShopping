@@ -51,6 +51,12 @@ class APSBaseViewController: UIViewController {
         return textWithOutTags
     }
     
+    func alertView(title:String, message:String) -> Void {
+        let alert = UIAlertController(title: "APShopping", message: "Added your product succesfully", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

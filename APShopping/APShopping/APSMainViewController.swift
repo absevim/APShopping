@@ -10,6 +10,8 @@ import ws
 import then
 import Arrow
 import Kingfisher
+import Reachability
+import SystemConfiguration
 import UIKit
 
 class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITableViewDelegate  {
@@ -18,14 +20,15 @@ class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITab
     private var productArray = [APSProductDetail]()
     private var pageNumber = Int()
     var refreshControl: UIRefreshControl!
+    var reachability: Reachability?
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 244.0, green: 191.0, blue: 28.0, alpha: 1.0)
         if self.productArray.count == 0 {
             self.pageNumber = 1
             getProducts("boy",self.pageNumber)
         }
-        
     }
     
     override func viewDidLoad() {
@@ -70,7 +73,8 @@ class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITab
 
         let apsProductDetail = self.productArray[indexPath.row];
         let url = URL(string:urlForProductImages(apsProductDetail))
-       // cell.productImageView.kf.setImage(with: url)
+        cell.isHighlighted = false;
+        cell.productImageView.kf.setImage(with: url)
         cell.productTitleLabel.text = apsProductDetail.name
         cell.productDetailLabel.text = removeHTMLTagsFromString(textWithTags: (apsProductDetail.description) as String)
         cell.productPriceLabel.text = String("AED \(apsProductDetail.price)")
@@ -81,7 +85,6 @@ class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITab
             getProducts("boy",self.pageNumber)
             print("PageNumber is \(self.pageNumber)")
         }
-        
         return cell
     }
     
@@ -91,17 +94,21 @@ class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITab
     }
     
     func getProducts(_ searchString:String,_ pageNumber:Int) -> Void {
-        let urlString = "https://www.mamasandpapas.ae/search/full/?searchString="+searchString+"&page="+String(pageNumber)+"&hitsPerPage=10"
-        
-        let ws = WS(urlString)
-        ws.post("").then { (json:JSON) in
-            var apsProduct = APSProduct()
-            apsProduct.deserialize(json)
+        if self.isConnectedToNetwork() == true {
+            let urlString = "https://www.mamasandpapas.ae/search/full/?searchString="+searchString+"&page="+String(pageNumber)+"&hitsPerPage=10"
             
-            for product in apsProduct.apsProductDetail{
-                self.productArray.append(product)
+            let ws = WS(urlString)
+            ws.post("").then { (json:JSON) in
+                var apsProduct = APSProduct()
+                apsProduct.deserialize(json)
+                
+                for product in apsProduct.apsProductDetail{
+                    self.productArray.append(product)
+                }
+                self.tableView.reloadData()
             }
-            self.tableView.reloadData()
+        }else{
+            self.alertView(title: "APShopping", message: "No internet connection!")
         }
     }
     
@@ -115,5 +122,38 @@ class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITab
             vc.selectedProduct = selectedProduct
         }
     }
-
+    
+    func isConnectedToNetwork() -> Bool {
+        
+        var zeroAddress = sockaddr_in(sin_len: 0, sin_family: 0, sin_port: 0, sin_addr: in_addr(s_addr: 0), sin_zero: (0, 0, 0, 0, 0, 0, 0, 0))
+        zeroAddress.sin_len = UInt8(MemoryLayout.size(ofValue: zeroAddress))
+        zeroAddress.sin_family = sa_family_t(AF_INET)
+        
+        let defaultRouteReachability = withUnsafePointer(to: &zeroAddress) {
+            $0.withMemoryRebound(to: sockaddr.self, capacity: 1) {zeroSockAddress in
+                SCNetworkReachabilityCreateWithAddress(nil, zeroSockAddress)
+            }
+        }
+        
+        var flags: SCNetworkReachabilityFlags = SCNetworkReachabilityFlags(rawValue: 0)
+        if SCNetworkReachabilityGetFlags(defaultRouteReachability!, &flags) == false {
+            return false
+        }
+        
+        /* Only Working for WIFI
+         let isReachable = flags == .reachable
+         let needsConnection = flags == .connectionRequired
+         
+         return isReachable && !needsConnection
+         */
+        
+        // Working for Cellular and WIFI
+        let isReachable = (flags.rawValue & UInt32(kSCNetworkFlagsReachable)) != 0
+        let needsConnection = (flags.rawValue & UInt32(kSCNetworkFlagsConnectionRequired)) != 0
+        let ret = (isReachable && !needsConnection)
+        
+        return ret
+        
+    }
 }
+

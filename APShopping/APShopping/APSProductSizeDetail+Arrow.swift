@@ -22,6 +22,6 @@ extension APSProductSizeDetail:ArrowParsable {
         optionId <-- json["optionId"]
         label <-- json["label"]
         isInStock <-- json["isInStock"]
-        simpleProductSkus <-- json["simpleProductSkus.Optional"]
+        simpleProductSkus <-- json["simpleProductSkus"]?[0]
     }
 }
