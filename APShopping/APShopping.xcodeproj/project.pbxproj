@@ -20,6 +20,9 @@
 		B82912411FAE0ED20071E5DB /* APSMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82912401FAE0ED20071E5DB /* APSMainViewController.swift */; };
 		B82912431FAE0F6E0071E5DB /* APSTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82912421FAE0F6E0071E5DB /* APSTableViewCell.swift */; };
 		B82912451FAE2B570071E5DB /* APSDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82912441FAE2B570071E5DB /* APSDetailViewController.swift */; };
+		B82912521FAE60250071E5DB /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82912511FAE60250071E5DB /* PureLayout.framework */; };
+		B82912541FAE6BE70071E5DB /* APSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82912531FAE6BE70071E5DB /* APSCollectionViewCell.swift */; };
+		B82912581FAE714A0071E5DB /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82912571FAE714A0071E5DB /* Kingfisher.framework */; };
 		B8FD9CA41FA9B9D700D965F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD9CA31FA9B9D700D965F2 /* AppDelegate.swift */; };
 		B8FD9CA91FA9B9D700D965F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CA71FA9B9D700D965F2 /* Main.storyboard */; };
 		B8FD9CAB1FA9B9D700D965F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CAA1FA9B9D700D965F2 /* Assets.xcassets */; };
@@ -70,6 +73,10 @@
 		B82912401FAE0ED20071E5DB /* APSMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSMainViewController.swift; sourceTree = "<group>"; };
 		B82912421FAE0F6E0071E5DB /* APSTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSTableViewCell.swift; sourceTree = "<group>"; };
 		B82912441FAE2B570071E5DB /* APSDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSDetailViewController.swift; sourceTree = "<group>"; };
+		B82912511FAE60250071E5DB /* PureLayout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PureLayout.framework; path = "Pods/../build/Debug-iphoneos/PureLayout/PureLayout.framework"; sourceTree = "<group>"; };
+		B82912531FAE6BE70071E5DB /* APSCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APSCollectionViewCell.swift; sourceTree = "<group>"; };
+		B82912551FAE700B0071E5DB /* moa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = moa.framework; path = "Pods/../build/Debug-iphoneos/moa/moa.framework"; sourceTree = "<group>"; };
+		B82912571FAE714A0071E5DB /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "Pods/../build/Debug-iphoneos/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
 		B8C4713C1FAA5E7B00CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		B8C4713E1FAA5F5400CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		B8D9EA091FAB912C00B7D958 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
@@ -98,6 +105,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B82912581FAE714A0071E5DB /* Kingfisher.framework in Frameworks */,
+				B82912521FAE60250071E5DB /* PureLayout.framework in Frameworks */,
 				B802A5581FAD1AE2004CBD5A /* then.framework in Frameworks */,
 				B802A5561FAD1AB5004CBD5A /* ws.framework in Frameworks */,
 				B802A5501FAD16F2004CBD5A /* Arrow.framework in Frameworks */,
@@ -127,6 +136,9 @@
 		2F17D1612B65F960491857E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B82912571FAE714A0071E5DB /* Kingfisher.framework */,
+				B82912551FAE700B0071E5DB /* moa.framework */,
+				B82912511FAE60250071E5DB /* PureLayout.framework */,
 				B802A5571FAD1AE2004CBD5A /* then.framework */,
 				B802A5551FAD1AB5004CBD5A /* ws.framework */,
 				B802A54F1FAD16F2004CBD5A /* Arrow.framework */,
@@ -177,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				B82912421FAE0F6E0071E5DB /* APSTableViewCell.swift */,
+				B82912531FAE6BE70071E5DB /* APSCollectionViewCell.swift */,
 			);
 			name = TableViewCell;
 			sourceTree = "<group>";
@@ -539,6 +552,7 @@
 				B8FD9CA41FA9B9D700D965F2 /* AppDelegate.swift in Sources */,
 				B82912431FAE0F6E0071E5DB /* APSTableViewCell.swift in Sources */,
 				B82912451FAE2B570071E5DB /* APSDetailViewController.swift in Sources */,
+				B82912541FAE6BE70071E5DB /* APSCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -702,6 +716,9 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Unbox",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/UnboxedAlamofire",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ws",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/PureLayout",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/moa",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Kingfisher",
 				);
 				INFOPLIST_FILE = APShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -725,6 +742,9 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Unbox",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/UnboxedAlamofire",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/ws",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/PureLayout",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/moa",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Kingfisher",
 				);
 				INFOPLIST_FILE = APShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

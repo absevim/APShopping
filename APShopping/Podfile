@@ -5,6 +5,8 @@ target 'APShopping' do
 use_frameworks!
 pod 'ws'
 pod 'Arrow'
+pod 'PureLayout'
+pod 'Kingfisher'
 
   target 'APShoppingTests' do
     inherit! :search_paths
