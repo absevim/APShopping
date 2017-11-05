@@ -1,0 +1,6 @@
+framework module HAActionSheet {
+  umbrella header "HAActionSheet-umbrella.h"
+
+  export *
+  module * { export * }
+}
