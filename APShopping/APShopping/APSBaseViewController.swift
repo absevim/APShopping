@@ -30,7 +30,27 @@ class APSBaseViewController: UIViewController {
         return urlString
     }
     
-
+    func removeOptionalFromInt(_ intWithOptional:Int) -> String {
+        var intWithoutOptional = Int()
+        if intWithOptional != nil {
+            intWithoutOptional = intWithOptional
+        }
+        return String(intWithOptional)
+    }
+    
+    func removeHTMLTagsFromString (textWithTags:String) -> String {
+        var textWithOutTags = String()
+        
+        textWithOutTags = textWithTags.replacingOccurrences(of: "<li>", with: "")
+        textWithOutTags = textWithOutTags.replacingOccurrences(of: "</li>", with: "")
+        textWithOutTags = textWithOutTags.replacingOccurrences(of: "<br />", with: "")
+        textWithOutTags = textWithOutTags.replacingOccurrences(of: "</strong>", with: "")
+        textWithOutTags = textWithOutTags.replacingOccurrences(of: "<strong>", with: "")
+        textWithOutTags = textWithOutTags.replacingOccurrences(of: "<ul>", with: "")
+        textWithOutTags = textWithOutTags.replacingOccurrences(of: "</ul>", with: "")
+        return textWithOutTags
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -40,5 +60,4 @@ class APSBaseViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

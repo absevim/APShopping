@@ -72,8 +72,8 @@ class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITab
         let url = URL(string:urlForProductImages(apsProductDetail))
        // cell.productImageView.kf.setImage(with: url)
         cell.productTitleLabel.text = apsProductDetail.name
-        cell.productDetailLabel.text = apsProductDetail.description
-        cell.productPriceLabel.text = String(apsProductDetail.price)
+        cell.productDetailLabel.text = removeHTMLTagsFromString(textWithTags: (apsProductDetail.description) as String)
+        cell.productPriceLabel.text = String("AED \(apsProductDetail.price)")
         
         let lastElement = self.productArray.count - 1
         if indexPath.row == lastElement {

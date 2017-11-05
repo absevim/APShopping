@@ -23,6 +23,7 @@
 		B82912521FAE60250071E5DB /* PureLayout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82912511FAE60250071E5DB /* PureLayout.framework */; };
 		B82912541FAE6BE70071E5DB /* APSCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B82912531FAE6BE70071E5DB /* APSCollectionViewCell.swift */; };
 		B82912581FAE714A0071E5DB /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B82912571FAE714A0071E5DB /* Kingfisher.framework */; };
+		B8D2B1061FAF586D00CAD629 /* HAActionSheet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D2B1051FAF586D00CAD629 /* HAActionSheet.framework */; };
 		B8FD9CA41FA9B9D700D965F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8FD9CA31FA9B9D700D965F2 /* AppDelegate.swift */; };
 		B8FD9CA91FA9B9D700D965F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CA71FA9B9D700D965F2 /* Main.storyboard */; };
 		B8FD9CAB1FA9B9D700D965F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B8FD9CAA1FA9B9D700D965F2 /* Assets.xcassets */; };
@@ -79,6 +80,7 @@
 		B82912571FAE714A0071E5DB /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "Pods/../build/Debug-iphoneos/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
 		B8C4713C1FAA5E7B00CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		B8C4713E1FAA5F5400CAA397 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		B8D2B1051FAF586D00CAD629 /* HAActionSheet.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HAActionSheet.framework; path = "Pods/../build/Debug-iphoneos/HAActionSheet/HAActionSheet.framework"; sourceTree = "<group>"; };
 		B8D9EA091FAB912C00B7D958 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		B8D9EA0B1FAC632200B7D958 /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = "Pods/../build/Debug-iphoneos/AlamofireObjectMapper/AlamofireObjectMapper.framework"; sourceTree = "<group>"; };
 		B8D9EA0C1FAC632200B7D958 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../../../Library/Developer/Xcode/DerivedData/APShopping-gmrtugcutcdkzzcbzytexzojtnya/Build/Products/Debug-iphonesimulator/ObjectMapper/ObjectMapper.framework"; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8D2B1061FAF586D00CAD629 /* HAActionSheet.framework in Frameworks */,
 				B82912581FAE714A0071E5DB /* Kingfisher.framework in Frameworks */,
 				B82912521FAE60250071E5DB /* PureLayout.framework in Frameworks */,
 				B802A5581FAD1AE2004CBD5A /* then.framework in Frameworks */,
@@ -136,6 +139,7 @@
 		2F17D1612B65F960491857E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B8D2B1051FAF586D00CAD629 /* HAActionSheet.framework */,
 				B82912571FAE714A0071E5DB /* Kingfisher.framework */,
 				B82912551FAE700B0071E5DB /* moa.framework */,
 				B82912511FAE60250071E5DB /* PureLayout.framework */,
@@ -719,6 +723,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/PureLayout",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/moa",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Kingfisher",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/HAActionSheet",
 				);
 				INFOPLIST_FILE = APShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -745,6 +750,7 @@
 					"$(PROJECT_DIR)/build/Debug-iphoneos/PureLayout",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/moa",
 					"$(PROJECT_DIR)/build/Debug-iphoneos/Kingfisher",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/HAActionSheet",
 				);
 				INFOPLIST_FILE = APShopping/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
