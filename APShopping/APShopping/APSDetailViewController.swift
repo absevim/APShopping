@@ -61,17 +61,15 @@ class APSDetailViewController: APSBaseViewController, UICollectionViewDataSource
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? APSCollectionViewCell  else {
             fatalError("The dequeued cell is not an instance of APSTableViewCell.")
         }
-        var imageString = self.selectedProduct!.image
-        
-        if imageString != nil {
-            let urlString = "https://prod4.atgcdn.ae/small_light(p=zoom,of=undefined)/pub/media/catalog/product\(String(describing: imageString))"
-            let url = URL(string:urlString)
-            cell.collectionImageView.kf.setImage(with: url)
-        }
+
+        let url = URL(string:urlForProductImages(self.selectedProduct!))
+        cell.collectionImageView.kf.setImage(with: url)
         return cell
     }
 
     @IBAction func isBackButtonPressed(_ sender: Any) {
+        navigationController?.popViewController(animated: true)
+        dismiss(animated: true, completion: nil)
     }
 
 }

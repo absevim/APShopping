@@ -9,21 +9,41 @@
 import ws
 import then
 import Arrow
+import Kingfisher
 import UIKit
 
 class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITableViewDelegate  {
 
     @IBOutlet weak var tableView: UITableView!
     private var productArray = [APSProductDetail]()
+    private var pageNumber = Int()
+    var refreshControl: UIRefreshControl!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        getProducts("boy")
+        if self.productArray.count == 0 {
+            self.pageNumber = 1
+            getProducts("boy",self.pageNumber)
+        }
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        refreshControl = UIRefreshControl()
+        refreshControl.attributedTitle = NSAttributedString(string: "Pull to refresh")
+        refreshControl?.addTarget(self, action: #selector(refresh(sender:)), for: UIControlEvents.valueChanged)
+        tableView.addSubview(refreshControl)
+    }
+    
+    func refresh(sender:AnyObject) {
+        // Code to refresh table view
+        self.productArray.removeAll()
+        tableView.reloadData()
+        refreshControl.endRefreshing()
+        self.pageNumber = 1
+        getProducts("boy", self.pageNumber)
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,9 +69,18 @@ class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITab
         }
 
         let apsProductDetail = self.productArray[indexPath.row];
+        let url = URL(string:urlForProductImages(apsProductDetail))
+       // cell.productImageView.kf.setImage(with: url)
         cell.productTitleLabel.text = apsProductDetail.name
         cell.productDetailLabel.text = apsProductDetail.description
         cell.productPriceLabel.text = String(apsProductDetail.price)
+        
+        let lastElement = self.productArray.count - 1
+        if indexPath.row == lastElement {
+            self.pageNumber += 1
+            getProducts("boy",self.pageNumber)
+            print("PageNumber is \(self.pageNumber)")
+        }
         
         return cell
     }
@@ -61,15 +90,17 @@ class APSMainViewController: APSBaseViewController, UITableViewDataSource, UITab
         self.performSegue(withIdentifier: "MainToDetailSegue", sender: self)
     }
     
-    func getProducts(_ searchString:String) -> Void {
-        let urlString = "https://www.mamasandpapas.ae/search/full/?searchString="+searchString+"&page=1&hitsPerPage=10"
+    func getProducts(_ searchString:String,_ pageNumber:Int) -> Void {
+        let urlString = "https://www.mamasandpapas.ae/search/full/?searchString="+searchString+"&page="+String(pageNumber)+"&hitsPerPage=10"
         
         let ws = WS(urlString)
         ws.post("").then { (json:JSON) in
             var apsProduct = APSProduct()
             apsProduct.deserialize(json)
             
-            self.productArray = apsProduct.apsProductDetail;
+            for product in apsProduct.apsProductDetail{
+                self.productArray.append(product)
+            }
             self.tableView.reloadData()
         }
     }

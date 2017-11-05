@@ -21,6 +21,15 @@ class APSBaseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func urlForProductImages(_ selectedProduct:APSProductDetail) -> String {
+        let imageString = selectedProduct.image
+        var urlString = String()
+        if imageString != nil {
+            urlString = "https://prod4.atgcdn.ae/small_light(p=zoom,of=undefined)/pub/media/catalog/product\(String(describing: imageString))"
+        }
+        return urlString
+    }
+    
 
     /*
     // MARK: - Navigation
